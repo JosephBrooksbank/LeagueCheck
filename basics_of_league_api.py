@@ -1,7 +1,8 @@
 import requests
 
 # The API key which I possess for this project
-api_key = "***REMOVED***"
+
+api_key = open("api_key", "r").read()
 
 
 def get_account_id(summoner_name: str) -> int:
@@ -26,5 +27,5 @@ def get_account_id(summoner_name: str) -> int:
     return data['accountId']
 
 
-print(get_account_id("Bittah Dreamer"))
-accountID = get_account_id()
+accountID = get_account_id("Bittah Dreamer")
+
