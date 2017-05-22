@@ -23,6 +23,7 @@ def main():
     else:
         get_current_game_info(get_id("Bittah Dreamer", True))
 
+
 def get_id(summoner_name: str, get_summoner_id = False) -> int:
     """
     Getting the Account ID or Summoner ID
